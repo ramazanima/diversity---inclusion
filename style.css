@@ -1,26 +1,35 @@
 
 html{
     background-color: whitesmoke;
+    
 }
-body{
+body {
     display: grid;
-    grid-area: 'header'
-                'body-text'
-                'photo'
-                'footer';
-
-    margin: 30px;
+    grid-template-areas:
+        "header"
+        "body-text"
+        "photo"
+        "footer";
+    grid-gap: 5px;
+    justify-items: center;
+    margin: 5px auto;
     border: 1.5px solid black;
     padding: 5px;
+    width: 80%;
 }
 
+article{
+    background-color: hsl(150, 20%, 95%)
+}
 header{
     text-align: center;
 }
 
 .container{
-   margin: 5px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
 }
 
 div{
@@ -49,9 +58,17 @@ div{
 }
 
 footer{
+    margin: 1em;
     text-align: center;
 }
 
-
-
-
+footer ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+    margin: auto;
+    justify-content: center; 
+}
+.section-2 h2{
+    text-align: center;
+}
